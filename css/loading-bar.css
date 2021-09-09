@@ -1,0 +1,69 @@
+.ldBar {
+  position: relative;
+  
+}
+.ldBar.label-center > .ldBar-label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-shadow: 0 0 3px #fff;
+  font-size: 3rem;
+}
+.ldBar-label:after {
+  content: "%";
+  display: none;
+}
+.ldBar.no-percent .ldBar-label:after {
+  content: "";
+}
+.ldBar path.baseline {
+  stroke: #8892b0;
+  stroke-width: 1;
+
+}
+.ldBar path.mainline {
+  stroke: #64ffda;
+  stroke-width: 3;
+}
+.ldBar-label {
+  font-size: 0px;
+}
+.progress {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.prog-down {
+  margin-top: 7vh;
+}
+.prog {
+  transform-style: preserve-3d;
+  position: relative;
+  opacity: 0.6;
+  
+}
+.prog:hover {
+  opacity: 1;
+}
+.prog img {
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  transform: translateZ(20px);
+  
+}
+.prog .sub {
+  text-transform: uppercase;
+  font-family: monospace;
+  position: absolute;
+  bottom: -27%;
+  left: 27%;
+  /* transform: translate(-50%, -50%); */
+  font-size: 1rem;
+  transform: translateZ(20px);
+  text-align: center;
+  color: #a8b2d1;
+}
