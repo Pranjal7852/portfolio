@@ -117,7 +117,7 @@ header a {
 header a:hover {
     color: var(--green);
 }
-li button {
+.btn {
     text-decoration: none;
     padding: 10px 15px;
     background-color: transparent;
@@ -130,7 +130,7 @@ li button {
     cursor: pointer;
     transition: 1s;
 }
-li button:hover {
+.btn:hover {
     background-color: rgba(64, 224, 208, 0.445);
 }
 /* header left */
@@ -204,10 +204,15 @@ li button:hover {
      padding-right: 30vw;
      padding-top: 2vh;
  }
+ .intro .btn {
+     width: 30%;
+     margin-top: 5vh;
+ }
  /* About */
  .about {
      margin: 1vh var(--padding-main);
      height: 120vh;
+     position: relative;
      
  }
  .head {
@@ -276,7 +281,7 @@ li button:hover {
   cursor: none;
   opacity: 0.7;
 }
-
+/* ICONS */
 .icon {
     position: absolute;
     font-size: var(--fz-xl);
@@ -304,6 +309,26 @@ li button:hover {
     right: 13%;
     color: var(--light-slate);
 }
+.fa-edge {
+    top: -15%;
+    left: 19%;
+    color: var(--light-slate);
+}
+.fa-globe-americas {
+    top: 45%;
+    right: -1%;
+    color: var(--light-slate);
+}
+.fa-wifi {
+    bottom: 3%;
+    left: 52%;
+    color: var(--light-slate);
+}
+.fa-at {
+    bottom: -19%;
+    right: 16%;
+    color: var(--light-slate);
+}
 @keyframes float {
     100% {
         transform: translateY(0px);
@@ -316,3 +341,113 @@ li button:hover {
     }
 }
 /* WORK */
+.expe {
+    margin: 15vh var(--padding-main) 1vh;
+    position: relative;
+    min-height: 100vh;
+}
+.expe .line {
+    width: 50%;
+    left: 60%;
+}
+.content {
+    padding: 10vh 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.content::after {
+    content: "";
+    height: 80%;
+    width: 4px;
+    position: absolute;
+    left:50%;
+    background-color: var(--lightest-slate);
+}
+.left {
+    align-self: flex-start;
+}
+.right {
+    align-self: flex-end;
+}
+.content .card {
+    box-shadow: -3px -3px 1px rgba(255, 255, 255, 0.274), 3px 3px 1px rgba(0, 0, 0, 0.24);
+}
+.card h2 {
+    font-size: var(--fz-l);
+    color: var(--light-slate);
+}
+.card h4 {
+    font-size: var(--fz-s);
+}
+
+.card {
+    width: 47%;
+    padding: 2vh 3vw;
+    margin: 3vh 0;
+    border-radius: 20px;
+    background-color: var(--dark-navy);
+    position: relative;
+
+}
+.card a {
+    color: var(--green);
+    text-decoration: none;
+    transition: 500ms;
+}
+.card a:hover {
+    text-decoration: underline;
+    color: var(--white);
+}
+.left::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: var(--lightest-slate);
+    border-radius: 50%;
+    top: 50%;
+    right: -9.3%;
+
+}
+.right::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: var(--lightest-slate);
+    border-radius: 50%;
+    top: 50%;
+    left: -8.7%;
+
+}
+.card ul {
+    list-style: none;
+}
+.card li {
+    list-style-type: style circle;;
+    color: var(--light-slate);
+    font-family: var(--font-sans);
+}
+.card li::before {
+    content: "";
+  border-color: transparent var(--green);
+  border-style: solid;
+  border-width: 0.35em 0 0.35em 0.45em;
+  display: block;
+  height: 0;
+  width: 0;
+  left: -1em;
+  top: 0.9em;
+  position: relative;
+  
+}
+/* Projects */
+.work {
+    margin: 3vh var(--padding-main);
+    min-height: 100vh;
+}
+.work .line {
+    width: 50%;
+    left: 65%;
+}

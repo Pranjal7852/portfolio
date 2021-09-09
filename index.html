@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/styles.css">
     <script src="https://kit.fontawesome.com/84588adc24.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/loading-bar.css">
+   
 </head>
 <body>
     <header>
@@ -21,7 +22,7 @@
             </li>
             <li><a href=""><span>04.</span>Contact</a>
             </li>
-            <li><button>Resume</button></li>
+            <li><button class="btn">Resume</button></li>
         </ul>
     </header>
     <div class="header-l left-ul">
@@ -53,11 +54,13 @@
         <div>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima sed magni nobis. Incidunt, nisi ut. Reprehenderit maiores temporibus quod harum.</p>
         </div>
-        
+        <button class="btn">Say Hello</button>
             <i class="fab fa-react icon"></i>
             <i class="fab fa-chrome icon"></i>
             <i class="far fa-file-code icon"></i>
             <i class="fab fa-css3 icon"></i>
+            <i class="fas fa-wifi icon"></i>
+            <i class="fas fa-at icon"></i>
         
     </section>
     <section class="about">
@@ -78,6 +81,11 @@
                 </div>
         </div>
         
+
+        <i class="fab fa-edge icon"></i>
+        <i class="fas fa-globe-americas icon"></i>
+
+
         <div class="tagline"><h4>	&lt;/TechStack&gt;</h4></div>
     <!-- PROGRESS CIRCLE     -->
         <div class="progress">
@@ -139,23 +147,68 @@
             <div class="sub">Java</div>
         </div>
         </div>
+
+        
+    </section>
+    <section class="expe">
+        <div class="head">
+            <span class="green-line">02.</span><h4>Where I've Worked</h4>
+            <div class="line"></div>
+        </div>
+
+        <div class="content">
+            <div class="card left">
+                <h2>Freelancer @ <span><a href="">Fivrr</a></span> </h2>
+                <h4 class="green-line">Nov 2020 - Present</h4>
+                <ul>
+                    <li>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, numquam culpa sint atque maxime illo. Nemo, sapiente! Veniam, non laudantium est tenetur aliquam vitae fugiat itaque iste beatae error atque!
+                    </li>
+                    <li>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, odit?
+                    </li>
+                </ul>
+            </div>
+
+            <div class="card right">
+                <h2>Web Developer @ <span><a href="">Pixonoids</a> </span></h2>
+                <h4 class="green-line">Feb 2021 - Present</h4>
+                <ul>
+                    <li>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, numquam culpa sint atque maxime illo. Nemo, sapiente! Veniam, non laudantium est tenetur aliquam vitae fugiat itaque iste beatae error atque!
+                    </li>
+                    <li>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, odit?
+                    </li>
+                </ul>
+            </div>
+
+            <div class="card left">
+                <h2>FrontEnd Developer @ <span><a href="">NITH Alunimi Cell</a></span></h2>
+                <h4 class="green-line">July 2021 - Present</h4>
+                <ul>
+                    <li>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, numquam culpa sint atque maxime illo. Nemo, sapiente! Veniam, non laudantium est tenetur aliquam vitae fugiat itaque iste beatae error atque!
+                    </li>
+                    <li>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, odit?
+                    </li>
+                </ul>
+            </div>
+        </div>
     </section>
     <section class="work">
-        <ul>
-            <li>
-                <div class="timeline-content">
-                    <h2>Lorem, ipsum.</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis accusamus culpa aliquam nam odio a consequatur doloribus veniam ea recusandae.</p>
-                </div>
-            </li>
-        </ul>
-
+        <div class="head">
+            <span class="green-line">02.</span><h4>Some Things I've Built</h4>
+            <div class="line"></div>
+        </div>
     </section>
     <script src="./library/tilt.js"></script>
     <script src="./library/loading-bar.js"></script>
+   
     <script>
         // Tilt.js Script
-    // const element = document.querySelector(".photo");
+    // const element = document.querySelector(".card");
     const element2 = document.querySelectorAll(".prog");
     VanillaTilt.init(element2, {
         speed: 400,
@@ -164,11 +217,17 @@
     scale:1.2,
 
     });
+
     VanillaTilt.init(element, {
-    speed: 400,
+    speed: 200,
     max: 20,
-    perspective:800 });
-        // prof scripr
+    perspective:1000,
+    glare:true,
+    maxGlare:20000
+     });
+        // mouse pointer
+        
+
     </script>
 </body>
 </html>

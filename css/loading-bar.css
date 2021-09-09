@@ -41,7 +41,7 @@
 .prog {
   transform-style: preserve-3d;
   position: relative;
-  opacity: 0.6;
+  opacity: 0.8;
   
 }
 .prog:hover {
@@ -66,4 +66,12 @@
   transform: translateZ(20px);
   text-align: center;
   color: #a8b2d1;
+}
+.prog:nth-child(3) .sub {
+  bottom: -27%;
+  left: 20%;
+}
+.prog:nth-child(2) .sub {
+  bottom: -27%;
+  left: 24%;
 }
