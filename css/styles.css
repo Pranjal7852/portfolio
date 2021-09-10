@@ -107,7 +107,7 @@ header {
     transition: 1s;
 }
 header img {
-    width: 60px;
+    width: 50px;
     opacity: 0.8;
 }
 header ul{
@@ -387,7 +387,7 @@ header a:hover {
 }
 
 .card {
-    width: 47%;
+    width: 48%;
     padding: 2vh 3vw;
     margin: 3vh 0;
     border-radius: 20px;
@@ -412,7 +412,8 @@ header a:hover {
     background-color: var(--lightest-slate);
     border-radius: 50%;
     top: 50%;
-    right: -9.3%;
+    left: 104.5%;
+    transform: translate(-50%, -50%);
 
 }
 .right::after {
@@ -423,7 +424,8 @@ header a:hover {
     background-color: var(--lightest-slate);
     border-radius: 50%;
     top: 50%;
-    left: -8.7%;
+    left: -4%;
+    transform: translate(-50%, -50%);
 
 }
 .card ul {
