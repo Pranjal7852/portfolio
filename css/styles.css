@@ -93,20 +93,20 @@ header img {
     width: 90px;
     opacity: 0.8;
 }
-header ul {
+header ul{
     display: flex;
     width: 50%;
     justify-content: space-around;
     align-items: center;
    
 }
-header li {
+header li, .code li {
     list-style: none;
 }
 li span {
     color: var(--green);
 }
-header a {
+header a, .code li {
     text-decoration: none;
     color: white;
     font-family: var(--font-mono);
@@ -243,7 +243,7 @@ header a:hover {
 .photo {
     width: 250px;
     height: 350px;
-    background-color: #64ffdb52;
+    background-color: #64ffdb28;
     background-blend-mode:luminosity;
     background-image: url(../images/IMG20210322162533.jpg);
     background-repeat: no-repeat;
@@ -329,6 +329,148 @@ header a:hover {
     right: 16%;
     color: var(--light-slate);
 }
+.fa-hdd {
+    bottom: -8%;
+    left: 0%;
+    color: var(--light-slate);
+}
+
+.fa-app-store {
+    top: 31%;
+    right: 30%;
+    color: var(--light-slate);
+}
+.fa-calendar{
+    top: 55%;
+    left: 17%;
+    color: var(--light-slate);
+
+}
+.fa-microphone {
+    top: 33%;
+    left: 2%;
+    color: var(--light-slate);
+}
+.fa-camera {
+    top: 39%;
+    left: 38%;
+    color: var(--light-slate);
+}
+.fa-infinity {
+    top: 67%;
+    left: 76%;
+    color: var(--light-slate);
+}
+.fa-tv {
+    bottom: 8%;
+    left: 56%;
+    color: var(--light-slate);
+}
+.fa-playstation {
+    bottom: 1%;
+    left: 7%;
+    color: var(--light-slate);
+}
+.fa-google-play {
+    top: 10%;
+    right: 10%;
+    color: var(--light-slate);
+}
+.fa-google {
+    bottom: 0%;
+    right: 3%;
+    color: var(--light-slate);
+}
+.fa-bluetooth {
+    top: 17%;
+    right: 42%;
+    color: var(--light-slate);
+}
+.fa-language {
+    top: 28%;
+    right: 59%;
+    color: var(--light-slate);
+}
+.fa-youtube {
+    top: 38%;
+    right: 40%;
+    color: var(--light-slate);
+}
+.fa-napster {
+    top: 50%;
+    right: 59%;
+    color: var(--light-slate);
+}
+.fa-trophy {
+    top: 56%;
+    right: 97%;
+    color: var(--light-slate);
+}
+.fa-paypal {
+    top: 65%;
+    right: 41%;
+    color: var(--light-slate);
+}
+.fa-paper-plane {
+    top: 80%;
+    right: 64%;
+    color: var(--light-slate);
+}
+.fa-spotify {
+    top: 71%;
+    right: -6%;
+    color: var(--light-slate);
+}
+.fa-bell {
+    bottom: -4%;
+    right: 2%;
+    color: var(--light-slate);
+}
+.fa-broadcast-tower {
+    bottom: 2%;
+    left: 2%;
+    color: var(--light-slate);
+}
+.fa-inbox {
+    top: 31%;
+    right: 88%;
+    color: var(--light-slate);
+}
+.fa-envelope-open-text {
+    top: 69%;
+    right: 6%;
+    color: var(--light-slate);
+}
+.fa-voicemail {
+    top: 32%;
+    right: 19%;
+    color: var(--light-slate);
+}
+.fa-address-book {
+    top: 102%;
+    right: 85%;
+    color: var(--light-slate);
+}
+.fa-address-card {
+    top: 101%;
+    right: 17%;
+    color: var(--light-slate);
+}
+.fa-fax {
+    top: 22%;
+    right: 1%;
+    color: var(--light-slate);
+}
+.fa-lightbulb {
+    top: 62%;
+    left: 19%;
+    color: var(--light-slate);
+}
+.fa-comment {
+    top: 7%;
+    left: 20%;
+    color: var(--light-slate);
+}    
 @keyframes float {
     100% {
         transform: translateY(0px);
@@ -446,8 +588,156 @@ header a:hover {
 .work {
     margin: 3vh var(--padding-main);
     min-height: 100vh;
+    position: relative;
 }
 .work .line {
     width: 50%;
     left: 65%;
+}
+.gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10vh 0;
+}
+.card-ss {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5vh 2vw;
+}
+.left-ss {
+    flex-direction: row-reverse;
+}
+.left-ss .card-main {
+    align-items: flex-start;
+    text-align: left;
+}
+.left-ss p {
+    text-align: left;
+}
+.img-ss {
+    background-image: url(./../images/ss/Screenshot\ \(25\).png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #64ffdb2c;
+    background-blend-mode:luminosity;
+    width: 40vw;
+}
+.card-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    width: 40vw;
+    min-height: 50vh;
+    text-align: left;
+    
+    line-height: 1.2;
+}
+.card-main .green-line {
+    font-size: 1rem;
+}
+.card-main h2 {
+    font-size: 1.9rem;
+    color: var(--lightest-slate);
+    
+}
+.box-ss {
+    background-color: var(--light-navy);
+    color: var(--light-slate);
+    font-size: 0.1rem;
+    z-index: 2;
+    width: 110%;
+}
+.box-ss p {
+    font-size: var(--fz-s);
+    padding: 4vh 3vh;
+    text-align: right;
+}
+.code ul {
+    padding: 1vh 2vw;
+    width: 110%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateX(-10px);
+    color: var(--white);
+}
+.code a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.5rem;
+    transition: 500ms;
+}
+.code a:hover {
+    
+    color: var(--green);
+    box-shadow: 3px 3px 50px 1px var(--green);
+}
+.work .btn {
+    text-align: center;
+    width: 70%;
+    transform: translateX(25%);
+}
+
+/* Helloe section */ 
+.hello {
+    margin: 20vh var(--padding-main) 0;
+    height: 100vh;
+    position: relative;
+}
+.hello .head {
+    padding: 0 20vw;
+   
+}
+.hello .line {
+    width: 20%;
+    left: 64%;
+}
+.msg {
+    text-align: center;
+    padding: 5vh 15vw;
+}
+.msg h2 {
+    color: var(--white);
+    word-spacing: 3px;
+    font-size: 3.2rem;
+}
+.hello form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.hello .field, .form textarea {
+    background-color: transparent;
+    color: var(--green);
+    width: 30vw;
+    font-family: var(--font-mono);
+    font-size: 1.2rem;
+    border-radius: 3px;
+    border: 1px solid var(--lightest-slate);
+    margin: 2vh 0;
+    padding: 2vh 1vw;
+}
+.form textarea {
+    background-color: transparent;
+    }
+.form .btn {
+    margin: 2vh 0;
+}    
+footer {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+footer p{
+    font-size: 1rem;
+    text-align: center;
+    pointer-events: none;
+    font-family: var(--font-mono);
 }
