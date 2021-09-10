@@ -16,4 +16,4 @@ I have made use of following library's in order to make website look more
 
 # Icons and Images
 
-I have used {FontAwosome](https://fontawesome.com/) for floating icons throught out the website.
+I have used [FontAwosome](https://fontawesome.com/) for floating icons throught out the website.
