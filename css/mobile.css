@@ -1,0 +1,132 @@
+@media screen and (max-width:380px) {
+    :root {
+        
+        --padding-main: 5vw;
+        --fz-xxl: 2.8rem;
+        --fz-xl: 2.0rem;
+        --fz-l: 1.7rem;
+        --fz-p: 1.3rem;
+        --fz-s: 1rem;
+    }
+    .header-l {
+        display: none;
+    }
+    .intro {
+        justify-content: space-around;
+        margin: 10vh var(--padding-main) 30vh;
+        height: 60vh;
+        padding-top: 20vh;
+        
+     }
+     .intro p {
+        padding-right: 10vw;
+        padding-top: 2vh;
+    }
+    .intro .btn {
+        width: 100%;
+        margin-top: 5vh;
+    }
+    /* HEAD */
+    .head h4 {
+        display: inline;
+        color: var(--lightest-slate);
+        font-size: var(--fz-l);
+        word-spacing: 3px;
+        margin-left: 10px;
+     }
+     .head .line {
+        height: 3px;
+        width: 27%;
+        background-color: var(--lightest-navy);
+        position: absolute;
+        transform: translate(-50%,-50%);
+        top: 50%;
+        left: 83%;
+    } 
+    .about {
+        height: 210vh;
+    }
+    .contain {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contain .red {
+        margin: 5vh 0;
+        width: 90%;
+        text-align: center;
+    }
+    .tagline {
+        width: 100%;
+        text-align: center;
+        margin: 1vh 0;
+        color: var(--light-slate);
+      font-size: var(--fz-l);
+      pointer-events:none;
+      cursor: none;
+      opacity: 0.8;
+    }
+    .ldBar path.baseline {
+        stroke: #8892b096;
+        stroke-width: 5;
+      
+      }
+      .ldBar path.mainline {
+        stroke: #64ffda;
+        stroke-width: 7;
+      }
+      .ldBar-label {
+        font-size: 0px;
+      }
+      .progress {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 40vh;
+
+      }
+      .prog {
+          flex: 45%;
+          padding-left: 10%;
+          margin: 2vh 0;
+      }
+      .prog-down {
+        margin-top: 4vh;
+      }
+      .prog {
+        transform-style: none;
+        position: relative;
+        opacity: 0.9;
+        
+      }
+      .prog:nth-child(5) {
+        padding-left: 34%;
+      }
+      .prog img {
+        position: absolute;
+        top: 50%;
+        left: 48%;
+        transform: translate(-50%, -50%);
+        
+      }
+      .prog .sub {
+        text-transform: uppercase;
+        font-family: monospace;
+        position: absolute;
+        bottom: -27%;
+        left: 27%;
+        /* transform: translate(-50%, -50%); */
+        font-size: 1rem;
+        transform: translateZ(20px);
+        text-align: center;
+        color: #a8b2d1;
+      }
+      .prog:nth-child(3) .sub {
+        bottom: -27%;
+        left: 20%;
+      }
+      .prog:nth-child(2) .sub {
+        bottom: -27%;
+        left: 24%;
+      }
+}
