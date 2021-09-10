@@ -1,0 +1,169 @@
+
+
+
+@keyframes float {
+    100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(5px);
+    }
+    0% {
+        transform: translateY(0px);
+    }
+}
+
+.icon {
+    position: absolute;
+    font-size: var(--fz-xl);
+    animation: float infinite ease-in 2s;
+    pointer-events: none;
+    opacity: 0.5;
+}
+.fa-at {
+    bottom: -19%;
+    right: 16%;
+    color: var(--light-slate);
+}
+.fa-hdd {
+    bottom: -8%;
+    left: 0%;
+    color: var(--light-slate);
+}
+
+.fa-app-store {
+    top: 31%;
+    right: 30%;
+    color: var(--light-slate);
+}
+.fa-calendar{
+    top: 55%;
+    left: 17%;
+    color: var(--light-slate);
+
+}
+.fa-microphone {
+    top: 33%;
+    left: 2%;
+    color: var(--light-slate);
+}
+.fa-camera {
+    top: 39%;
+    left: 38%;
+    color: var(--light-slate);
+}
+.fa-infinity {
+    top: 67%;
+    left: 76%;
+    color: var(--light-slate);
+}
+.fa-tv {
+    bottom: 8%;
+    left: 56%;
+    color: var(--light-slate);
+}
+.fa-playstation {
+    bottom: 1%;
+    left: 7%;
+    color: var(--light-slate);
+}
+.fa-google-play {
+    top: 10%;
+    right: 10%;
+    color: var(--light-slate);
+}
+.fa-google {
+    bottom: 0%;
+    right: 3%;
+    color: var(--light-slate);
+}
+.fa-bluetooth {
+    top: 17%;
+    right: 42%;
+    color: var(--light-slate);
+}
+.fa-language {
+    top: 28%;
+    right: 59%;
+    color: var(--light-slate);
+}
+.fa-youtube {
+    top: 38%;
+    right: 40%;
+    color: var(--light-slate);
+}
+.fa-napster {
+    top: 50%;
+    right: 59%;
+    color: var(--light-slate);
+}
+.fa-trophy {
+    top: 56%;
+    right: 97%;
+    color: var(--light-slate);
+}
+.fa-paypal {
+    top: 65%;
+    right: 41%;
+    color: var(--light-slate);
+}
+.fa-paper-plane {
+    top: 80%;
+    right: 64%;
+    color: var(--light-slate);
+}
+.fa-spotify {
+    top: 71%;
+    right: -6%;
+    color: var(--light-slate);
+}
+.fa-bell {
+    bottom: -4%;
+    right: 2%;
+    color: var(--light-slate);
+}
+.fa-broadcast-tower {
+    bottom: 2%;
+    left: 2%;
+    color: var(--light-slate);
+}
+.fa-inbox {
+    top: 31%;
+    right: 88%;
+    color: var(--light-slate);
+}
+.fa-envelope-open-text {
+    top: 69%;
+    right: 6%;
+    color: var(--light-slate);
+}
+.fa-voicemail {
+    top: 32%;
+    right: 19%;
+    color: var(--light-slate);
+}
+.fa-address-book {
+    top: 102%;
+    right: 85%;
+    color: var(--light-slate);
+}
+.fa-address-card {
+    top: 101%;
+    right: 17%;
+    color: var(--light-slate);
+}
+.fa-fax {
+    top: 22%;
+    right: 1%;
+    color: var(--light-slate);
+}
+.fa-lightbulb {
+    top: 62%;
+    left: 19%;
+    color: var(--light-slate);
+}
+.fa-comment {
+    top: 7%;
+    left: 20%;
+    color: var(--light-slate);
+}    

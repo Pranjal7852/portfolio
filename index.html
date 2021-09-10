@@ -9,53 +9,61 @@
     <script src="https://kit.fontawesome.com/84588adc24.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/loading-bar.css">
     <link rel="stylesheet" href="./css/imagehover.css">
+    <link rel="stylesheet" href="./css/icons.css">
+    <link rel="stylesheet" href="./css/aos.css">
+    <link rel="stylesheet" href="./css/magic-mouse.css">
+    <script src="./library/magic_mouse.js"></script>
+
    
 </head>
 <body>
     <header>
         <div class="logo"><img src="./images/webxsx.png" alt=""></div>
-        <ul>
-            <li><a href=""> <span>01.</span>About</a>
+        <ul data-aos="fade-down" data-aos-delay="50" >
+            <li><a href="#about-p"> <span>01.</span>About</a>
             </li>
-            <li><a href=""><span>02.</span>Experiecne</a>
+            <li><a href="#expe-p"><span>02.</span>Experience</a>
             </li>
-            <li><a href=""><span>03.</span>Work</a>
+            <li><a href="#work-p"><span>03.</span>Work</a>
             </li>
-            <li><a href=""><span>04.</span>Contact</a>
+            <li><a href="#hello-p"><span>04.</span>Contact</a>
             </li>
-            <li><button class="btn">Resume</button></li>
+            <li><button class="btn magic-hover magic-hover__square" ><a class="" href="./pdfs/cv.pdf" download="Pranjal CV">Resume</a> </button></li>
         </ul>
     </header>
+    <!-- LEFT HEADER -->
     <div class="header-l left-ul">
         <ul>
-            <li><a href=""><i class="fab fa-github"></i></a></li>
-            <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
-            <li><a href=""><i class="fab fa-instagram"></i></a></li>
-            <li><a href=""><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://github.com/Pranjal7852" target="blank"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/pranjal-goyal-42a7a55b/" target="blank"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="https://www.instagram.com/goelpranjal/" target="blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://twitter.com/PRANJALGOYAL6" target="blank"><i class="fab fa-twitter"></i></a></li>
         </ul>
         <div class="line-l"></div>
     </div>
+    <!-- RIGHT HEADER -->
     <div class="header-l right-ul">
         <ul>
-            <li><a href=""><span>id4prajal@gmail.com</span></i></a></li>
+            <li><a href="mailto:id4pranjal@gmail.com"><span>id4prajal@gmail.com</span></i></a></li>
             
         </ul>
         <div class="line-l"></div>
     </div>
-    <section class="intro">
-        <div class="green-line">
+    <!-- INTRO SECTION -->
+    <section  class="intro">
+        <div class="green-line" data-aos="fade-up" data-aos-delay="300">
            <h4> Hi, my name is</h4>
         </div>
-        <div>
+        <div data-aos="fade-up" data-aos-delay="800">
             <h1>pranjal goyal.</h1>
         </div>
-        <div>
+        <div data-aos="fade-up" data-aos-delay="1100">
             <h2>Web Developer By Passion.</h2>
         </div>
-        <div>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima sed magni nobis. Incidunt, nisi ut. Reprehenderit maiores temporibus quod harum.</p>
+        <div data-aos="fade-up" data-aos-delay="1500">
+            <p>I'm a Full Stack Developer with a serious passion for UI effects, animations and creating intuitive user experiences with highly scalable backend.</p>
         </div>
-        <button class="btn">Say Hello</button>
+        <button class="btn magic-hover magic-hover__square"><a href="#hello-p">Say Hello</a></button>
             <i class="fab fa-react icon"></i>
             <i class="fab fa-chrome icon"></i>
             <i class="far fa-file-code icon"></i>
@@ -64,21 +72,23 @@
             <i class="fas fa-at icon"></i>
         
     </section>
-    <section class="about">
+    <!-- ABOUT SECTION -->
+    <section id="about-p" class="about">
         <div class="head">
             <span class="green-line">01.</span><h4>About Me</h4>
             <div class="line"></div>
         </div>
         <div class="contain">
-            <div class="photo">
+            <div class="photo magic-hover magic-hover__square" data-aos="zoom-out-left">
                 
             </div>
             
-            <div class="red">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero obcaecati ullam beatae voluptate odit incidunt suscipit doloremque in minima dignissimos. Animi harum nam, nihil modi eum illo inventore nemo unde veniam deleniti exercitationem iste accusantium praesentium repellendus illum consequuntur mollitia aliquam ad quia sunt. Soluta hic culpa ipsam eligendi perspiciatis?</p>
+            <div class="red" data-aos="zoom-out">
+                <p>I'm an undergraduate in B-Tech Electronics and Communication Engineering from <span class="green-word">NIT, Hamirpur</span>  with current grade point of 9.51. Currently I'm working on <span class="green-word">MERN</span>  stack but also want to explore my potential in Machine Learning and Artificial Intelligence.</p>
                 <br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus expedita earum ullam obcaecati distinctio blanditiis quisquam dolore alias veritatis sint.</p>
+                <p> I am also an Executive member of Team <span class="green-word">Pixonoids</span>, which is the leading Club for Web Development in our College.</p>
                 <br>
+                <p>I am open to different ideas, and by mixing my skills into them, I am looking forward to making my mark in the industry as a developer.</p>
                 </div>
         </div>
         
@@ -90,8 +100,8 @@
 
         <div class="tagline"><h4>	&lt;/TechStack&gt;</h4></div>
     <!-- PROGRESS CIRCLE     -->
-        <div class="progress">
-            <div class="prog">
+        <div class="progress" data-aos="fade-up">
+            <div class="prog ">
             <div class="ldBar ldBar-label" data-value="60" data-preset="circle">
             </div>
             <div class="sub">&nbsp;HTML</div>
@@ -123,7 +133,7 @@
         </div>
         </div>
         <!-- next table -->
-        <div class="progress prog-down">
+        <div class="progress prog-down" data-aos="fade-up">
             <div class="prog">
             <div class="ldBar ldBar-label" data-value="60" data-preset="circle">
             </div>
@@ -152,7 +162,8 @@
 
         
     </section>
-    <section class="expe">
+    <!-- experience section -->
+    <section id="expe-p" class="expe">
 
         
         
@@ -172,8 +183,8 @@
             <div class="line"></div>
         </div>
 
-        <div class="content">
-            <div class="card left">
+        <div  class="content">
+            <div  class="card left " data-aos="fade-left">
                 <h2>Freelancer @ <span><a href="">Fivrr</a></span> </h2>
                 <h4 class="green-line">Nov 2020 - Present</h4>
                 <ul>
@@ -186,7 +197,7 @@
                 </ul>
             </div>
 
-            <div class="card right">
+            <div class="card right" data-aos="fade-right">
                 <h2>Web Developer @ <span><a href="">Pixonoids</a> </span></h2>
                 <h4 class="green-line">Feb 2021 - Present</h4>
                 <ul>
@@ -199,7 +210,7 @@
                 </ul>
             </div>
 
-            <div class="card left">
+            <div class="card left" data-aos="fade-left">
                 <h2>FrontEnd Developer @ <span><a href="">NITH Alunimi Cell</a></span></h2>
                 <h4 class="green-line">July 2021 - Present</h4>
                 <ul>
@@ -213,7 +224,8 @@
             </div>
         </div>
     </section>
-    <section class="work">
+    <!-- work section -->
+    <section id="work-p" class="work">
 
         <i class="fab fa-bluetooth icon"></i>
         <i class="fas fa-language icon"></i>
@@ -231,14 +243,14 @@
             <span class="green-line">03.</span><h4>Some Things I've Built</h4>
             <div class="line"></div>
         </div>
-
+        <!-- Projects Cards Start Here -->
         <div class="gallery">
 
             <!-- first card stars here -->
             <div class="card-ss right-ss">
-                <div class="img-ss">
+                <div class="img-ss pixo " data-aos="fade-left">
                 </div>
-                <div class="card-main right-ss">
+                <div class="card-main right-ss " data-aos="zoom-in-left">
                     <div><span class="green-line">Club Project</span></div>
                     <div><h2>Pixonoids Farewell Website</h2></div>
                     <div class="box-ss">
@@ -246,94 +258,94 @@
                     </div>
                     <div class="code">
                         <ul>
-                            <li>VS CODE</li>
-                            <li>CHROME</li>
-                            <li>React</li>
-                            <li>Angular</li>
+                            <li>SVG</li>
+                            <li>HTML</li>
+                            <li>AOS.JS</li>
+                            <li>SCSS</li>
                         </ul>
                     </div>
                     <div class="code">
                         <ul>
-                            <li><a href=""><i class="fab fa-github"></i></a></li>
-                            <li><a href=""><i class="fas fa-external-link-alt"></i></a></li>
+                            <li><a href="https://github.com/Pranjal7852/farewell2021" target="blank"><i class="fab fa-github"></i></a></li>
+                            <li><a href="https://pranjal7852.github.io/farewell2021/" target="blank"><i class="fas fa-external-link-alt"></i></a></li>
                         </ul>
                     </div>
                 </div>
         </div>
 
             <div class="card-ss left-ss">
-                <div class="img-ss">
+                <div class="img-ss newb" data-aos="fade-right">
                 </div>
-                <div class="card-main">
-                    <div><span class="green-line">Club Project</span></div>
-                    <div><h2>Pixonoids Farewell Website</h2></div>
+                <div class="card-main" data-aos="zoom-in-right">
+                    <div><span class="green-line">College Community</span></div>
+                    <div><h2>NewBDrive NITH Resource </h2></div>
                     <div class="box-ss">
                         <p style="text-align: left;">Lorem ipsum dolor sit  Laborum reiciendis mwkdnljn wdelwjndw lwkednlwjdn edwldneljd wlkendlewquam quas enim? Vitae dolorem d kewnd iwedlioluptates obcaecati, debitis quam?</p>
                     </div>
                     <div class="code">
                         <ul>
-                            <li>VS CODE</li>
-                            <li>CHROME</li>
-                            <li>React</li>
-                            <li>Angular</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>GITHUB</li>
+                            <li>DRIVE</li>
                         </ul>
                     </div>
                     <div class="code">
                         <ul>
-                            <li><a href=""><i class="fab fa-github"></i></a></li>
-                            <li><a href=""><i class="fas fa-external-link-alt"></i></a></li>
+                            <li><a href="https://github.com/Pranjal7852/NewBdrive" target="blank"><i class="fab fa-github"></i></a></li>
+                            <li><a href="https://pranjal7852.github.io/NewBdrive/" target="blank"><i class="fas fa-external-link-alt"></i></a></li>
                         </ul>
                     </div>
                 </div>
          </div>
 
          <div class="card-ss right-ss">
-            <div class="img-ss">
+            <div class="img-ss cred" data-aos="fade-left">
             </div>
-            <div class="card-main right-ss">
-                <div><span class="green-line">Club Project</span></div>
-                <div><h2>Pixonoids Farewell Website</h2></div>
+            <div class="card-main right-ss" data-aos="zoom-in-left">
+                <div><span class="green-line">VanillaJS Practice</span></div>
+                <div><h2>CRED UI Style Drumstick</h2></div>
                 <div class="box-ss">
                     <p>Lorem ipsum dolor sit  Laborum reiciendis mwkdnljn wdelwjndw lwkednlwjdn edwldneljd wlkendlewquam quas enim? Vitae dolorem d kewnd iwedlioluptates obcaecati, debitis quam?</p>
                 </div>
                 <div class="code">
                     <ul>
-                        <li>VS CODE</li>
-                        <li>CHROME</li>
-                        <li>React</li>
-                        <li>Angular</li>
+                        <li>VANILLA.JS</li>
+                        <li>HTML</li>
+                        <li>FIGMA</li>
+                        <li>CSS</li>
                     </ul>
                 </div>
                 <div class="code">
                     <ul>
-                        <li><a href=""><i class="fab fa-github"></i></a></li>
-                        <li><a href=""><i class="fas fa-external-link-alt"></i></a></li>
+                        <li><a href="https://github.com/Pranjal7852/VanillaJS" target="blank"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://pranjal7852.github.io/VanillaJS/day1/" target="blank"><i class="fas fa-external-link-alt"></i></a></li>
                     </ul>
                 </div>
             </div>
         </div>
 
         <div class="card-ss left-ss">
-            <div class="img-ss">
+            <div class="img-ss mas" data-aos="fade-right">
             </div>
-            <div class="card-main right-ss">
+            <div class="card-main right-ss" data-aos="zoom-in-right">
                 <div><span class="green-line">Club Project</span></div>
-                <div><h2>Pixonoids Farewell Website</h2></div>
+                <div><h2>Pixonoids Mascot Reveal</h2></div>
                 <div class="box-ss">
                     <p style="text-align: left;">Lorem ipsum dolor sit  Laborum reiciendis mwkdnljn wdelwjndw lwkednlwjdn edwldneljd wlkendlewquam quas enim? Vitae dolorem d kewnd iwedlioluptates obcaecati, debitis quam?</p>
                 </div>
                 <div class="code">
                     <ul>
-                        <li>VS CODE</li>
-                        <li>CHROME</li>
-                        <li>React</li>
-                        <li>Angular</li>
+                        <li>HTML</li>
+                        <li>PARTICLE.JS</li>
+                        <li>CSS</li>
+                        <li>ILLUSTRATOR</li>
                     </ul>
                 </div>
                 <div class="code">
                     <ul>
-                        <li><a href=""><i class="fab fa-github"></i></a></li>
-                        <li><a href=""><i class="fas fa-external-link-alt"></i></a></li>
+                        <li><a href="https://github.com/Pranjal7852/webdev4pixo" target="blank"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://pranjal7852.github.io/webdev4pixo/mascott/" target="blank"><i class="fas fa-external-link-alt"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -341,52 +353,52 @@
 
 
      <div class="card-ss right-ss">
-        <div class="img-ss">
+        <div class="img-ss spx" data-aos="fade-left">
         </div>
-        <div class="card-main right-ss">
-            <div><span class="green-line">Club Project</span></div>
-            <div><h2>Pixonoids Farewell Website</h2></div>
+        <div class="card-main right-ss" data-aos="zoom-in-left">
+            <div><span class="green-line">CSS Practice</span></div>
+            <div><h2>SpaceX Website Mimic</h2></div>
             <div class="box-ss">
                 <p>Lorem ipsum dolor sit  Laborum reiciendis mwkdnljn wdelwjndw lwkednlwjdn edwldneljd wlkendlewquam quas enim? Vitae dolorem d kewnd iwedlioluptates obcaecati, debitis quam?</p>
             </div>
             <div class="code">
                 <ul>
-                    <li>VS CODE</li>
-                    <li>CHROME</li>
-                    <li>React</li>
-                    <li>Angular</li>
+                    <li>FLEX</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>GIT</li>
                 </ul>
             </div>
             <div class="code">
                 <ul>
-                    <li><a href=""><i class="fab fa-github"></i></a></li>
-                    <li><a href=""><i class="fas fa-external-link-alt"></i></a></li>
+                    <li><a href="https://github.com/Pranjal7852/webdev4pixo" target="blank"><i class="fab fa-github"></i></a></li>
+                    <li><a href="https://pranjal7852.github.io/webdev4pixo/spacex/" target="blank"><i class="fas fa-external-link-alt"></i></a></li>
                 </ul>
             </div>
         </div>
     </div>
 
     <div class="card-ss left-ss">
-        <div class="img-ss">
+        <div class="img-ss time" data-aos="fade-right">
         </div>
-        <div class="card-main right-ss">
-            <div><span class="green-line">Club Project</span></div>
-            <div><h2>Pixonoids Farewell Website</h2></div>
+        <div class="card-main right-ss" data-aos="zoom-in-right">
+            <div><span class="green-line">Vanilla JS Practice</span></div>
+            <div><h2>Strange Time Website</h2></div>
             <div class="box-ss">
                 <p style="text-align: left;">Lorem ipsum dolor sit  Laborum reiciendis mwkdnljn wdelwjndw lwkednlwjdn edwldneljd wlkendlewquam quas enim? Vitae dolorem d kewnd iwedlioluptates obcaecati, debitis quam?</p>
             </div>
             <div class="code">
                 <ul>
-                    <li>VS CODE</li>
-                    <li>CHROME</li>
-                    <li>React</li>
-                    <li>Angular</li>
+                    <li>CSS</li>
+                    <li>JS</li>
+                    <li>HTML</li>
+                    <li>ILLUSTRATOR</li>
                 </ul>
             </div>
             <div class="code">
                 <ul>
-                    <li><a href=""><i class="fab fa-github"></i></a></li>
-                    <li><a href=""><i class="fas fa-external-link-alt"></i></a></li>
+                    <li><a href="https://github.com/Pranjal7852/VanillaJS" target="blank"><i class="fab fa-github"></i></a></li>
+                    <li><a href="https://pranjal7852.github.io/VanillaJS/day2/" target="blank"><i class="fas fa-external-link-alt"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -395,11 +407,12 @@
 
             </div>
 
-            <div class="btn">Click Here to View Full List Here <i class="fas fa-external-link-alt"></i></div>
+            <div class="btn magic-hover magic-hover__square">Click Here to View Full List Here <i class="fas fa-external-link-alt"></i></div>
         </div>
     </section>
 
-    <section class="hello">
+    <!-- Hello SEction -->
+    <section id="hello-p" class="hello">
         <i class="fas fa-inbox icon"></i>
         <i class="fas fa-voicemail icon"></i>
         <i class="fas fa-envelope-open-text icon"></i>
@@ -414,18 +427,19 @@
             <span class="green-line">04. What's Next?</span>
             <div class="line"></div>
         </div>
+        <!-- Form Section -->
         <div class="form">
-            <div class="msg">
+            <div class="msg" data-aos="fade-down">
                 <h2>Get in Touch</h2>
                 <p>My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!</p>
             </div>
 
            
-                <form action="">
+                <form action="" data-aos="zoom-in">
                     <input type="text" placeholder="Your Good Name" class="field">
                     <input type="text" placeholder="Your Email Please" class="field">
                     <textarea placeholder="Your Message " id="" cols="30" rows="10"></textarea>
-                    <button type="submit" class="btn">Hello Pranjal</button>
+                    <button type="submit" class="btn magic-hover magic-hover__square">Hello Pranjal</button>
                 </form>
             
         </div>
@@ -436,10 +450,67 @@
     </section>
     <script src="./library/tilt.js"></script>
     <script src="./library/loading-bar.js"></script>
+    <script src="./library/aos.js"></script>
    
     <script>
+        // Navbar Scroll
+        (function(){
+
+    var doc = document.documentElement;
+    var w = window;
+
+    var prevScroll = w.scrollY || doc.scrollTop;
+    var curScroll;
+    var direction = 0;
+    var prevDirection = 0;
+
+    var header = document.querySelector('header');
+
+var checkScroll = function() {
+
+  /*
+  ** Find the direction of scroll
+  ** 0 - initial, 1 - up, 2 - down
+  */
+
+  curScroll = w.scrollY || doc.scrollTop;
+  if (curScroll > prevScroll) { 
+    //scrolled up
+    direction = 2;
+  }
+  else if (curScroll < prevScroll) { 
+    //scrolled down
+    direction = 1;
+  }
+
+  if (direction !== prevDirection) {
+    toggleHeader(direction, curScroll);
+  }
+
+  prevScroll = curScroll;
+};
+
+var toggleHeader = function(direction, curScroll) {
+  if (direction === 2 && curScroll > 100) { 
+
+    //replace 52 with the height of your header in px
+
+    header.classList.add('hide');
+    prevDirection = direction;
+  }
+  else if (direction === 1) {
+    header.classList.remove('hide');
+    prevDirection = direction;
+  }
+};
+
+window.addEventListener('scroll', checkScroll);
+
+})();
+
+
         // Tilt.js Script
-    // const element = document.querySelector(".card");
+    // const element = document.querySelectorAll(".card-main");
     const element2 = document.querySelectorAll(".prog");
     VanillaTilt.init(element2, {
         speed: 400,
@@ -450,15 +521,35 @@
     });
 
     VanillaTilt.init(element, {
-    speed: 200,
+    speed: 100,
     max: 20,
     perspective:1000,
-    glare:true,
+    glare:false,
     maxGlare:20000
      });
-        // mouse pointer
+
+     
         
 
+    </script>
+    
+        <script>
+        AOS.init({
+            offset:250,
+            duration:500
+        });
+
+    </script>
+    <script>
+        options = {
+	"cursorOuter": "circle-basic",
+	"hoverEffect": "circle-move",
+	"hoverItemMove": false,
+	"defaultCursor": false,
+	"outerWidth": 30,
+	"outerHeight": 30
+      };
+    magicMouse(options);
     </script>
 </body>
 </html>
