@@ -14,4 +14,6 @@ I have made use of following library's in order to make website look more
  3. [Tilt.JS](https://gijsroge.github.io/tilt.js/) 
  4. [Magic Mouse](https://magicmousejs.web.app/) 
 
-![enter image description here](https://ibb.co/p2zC93s)
+# Icons and Images
+
+I have used {FontAwosome](https://fontawesome.com/) for floating icons throught out the website.
