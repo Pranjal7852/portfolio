@@ -24,7 +24,6 @@
         --fz-s: 1rem;
     }
     body {
-        overflow-x: hidden;
     }
     html {
         overflow-x: hidden;
@@ -135,7 +134,8 @@
         width: 30px;
         font-size: var(--fz-p);
         bottom: 15vh;
-        }
+    }
+        
     .left-ul {
        left: 2vw;
     }
@@ -251,6 +251,7 @@
         left: 17%;
         color: var(--light-slate);
     }
+    /* Experience section */
     .expe {
         margin: 15vh var(--padding-main) 1vh;
         position: relative;
@@ -315,3 +316,4 @@
     
     }
 }
+
