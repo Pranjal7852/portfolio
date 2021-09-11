@@ -15,7 +15,6 @@
 
 .icon {
     position: absolute;
-    font-size: var(--fz-xl);
     animation: float infinite ease-in 2s;
     pointer-events: none;
     opacity: 0.5;
