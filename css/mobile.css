@@ -12,6 +12,7 @@
         --white: #e6f1ff;
         --green: #64ffda;
         --green-tint: rgba(100,255,218,0.1);
+        --padding-main: 10vw;
         --pink: #f57dff;
         --blue: #57cbff; 
         --font-sans: 'Inter', sans-serif;
@@ -69,7 +70,6 @@
       
       header {
         height: 8vh;
-        width: 100%;
         position: fixed;
         top: 0px;
         display: flex;
@@ -80,6 +80,7 @@
         z-index: 100;
         transition: 500ms;
         padding: 6vh 6vw;
+        width: 90vw;
     }
     header img {
         width: 45px;
@@ -133,17 +134,18 @@
         bottom: 15vh;
         }
     .left-ul {
-       left: 2vw;
+       display: none;
     }
     .right-ul {
         display: none;
     }
     .intro {
         height: 80vh;
-        display: flex;
+        /* display: flex; */
         flex-direction: column;
         margin: 20vh var(--padding-main) 1vh;
         line-height: 2;
+        width: 100%;
      }
      .intro h1 {
          font-size: 2.8rem;
