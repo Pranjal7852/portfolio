@@ -24,9 +24,12 @@
         --fz-s: 1rem;
     }
     body {
+        overflow-x: hidden;
+        width: 100%;
     }
     html {
         overflow-x: hidden;
+        width: 100%;
     }  
       .line {
         fill: none;
@@ -172,7 +175,7 @@
      }
      .about {
         margin: 1vh var(--padding-main);
-        height: 190vh;
+        height: 210vh;
         position: relative;
         width: 85%;
         padding-left: 0.5vw;
@@ -208,6 +211,23 @@
       pointer-events:none;
       cursor: none;
     } 
+    /* Progreess icons */
+    .progress {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+      
+      .prog-down {
+        margin-top: 3vh;
+      }
+      .prog {
+        transform-style: preserve-3d;
+        position: relative;
+        opacity: 0.9;
+        margin-top: 3.7vh;
+        
+      }
 
     .icon {
         position: absolute;
@@ -253,10 +273,11 @@
     }
     /* Experience section */
     .expe {
-        margin: 15vh var(--padding-main) 1vh;
+        margin: 0vh 0vw 1vh;
         position: relative;
         min-height: 100vh;
         width: 100%;
+        padding: 15vh 11vw 0;
     }
     .expe .head {
         text-align: center;
@@ -268,7 +289,7 @@
     }
     .expe .line {
         width: 90%;
-        left: 70%;
+        left: 60%;
         top: 110%;
     }
     .content {
@@ -315,5 +336,140 @@
         display: none;
     
     }
+    /* Projects */
+.work {
+    margin: 3vh var(--padding-main) 0;
+    min-height: 100vh;
+    position: relative;
+}
+.work .line {
+    width: 50%;
+    left: 65%;
+}
+ .head h4 {
+    text-align: center;
+    white-space:pre-wrap;
+}
+.gallery {
+    margin: 5vh 0;
+}
+.card-ss {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5vh 3vw;
+}
+.img-ss {
+    
+    background-position: center;
+    background-size: cover;
+
+    background-repeat: no-repeat;
+    background-color: #64ffdb81;
+    background-blend-mode:darken;
+    width: 40vw;
+    transition: 500ms;
+    opacity: 0.9;
+    height: 25vh;
+    width: 80vw;
+}
+.img-ss:hover {
+    background-color: #64ffdb02;
+    opacity: 1;
+}
+.card-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    width: 80vw;
+    min-height: 50vh;
+    text-align: left;
+    
+    line-height: 1.2;
+}
+.card-main .green-line {
+    font-size: 1rem;
+    line-height: 2;
+}
+.card-main h2 {
+    font-size: 1.9rem;
+    color: var(--lightest-slate);
+    text-align: center;
+    
+}
+.box-ss {
+    background-color: var(--light-navy);
+    color: var(--light-slate);
+    font-size: 0.1rem;
+    z-index: 2;
+    width: 100%;
+    
+}
+.box-ss p {
+    font-size: var(--fz-s);
+    padding: 4vh 3vh;
+    text-align: center;
+}
+
+.work .btn {
+    text-align: center;
+    width: 100%;
+    margin: auto ;
+    font-size: var(--fz-s);
+}
+/* Hello Section */
+
+.hello .head span {
+    font-size: 1.5rem;
+    white-space: nowrap;
+    position: absolute;
+    left: 12vw;
+    top: -6vh;
+}
+.hello .line {
+    width: 50%;
+    left: 64%;
+}
+.msg {
+    text-align: center;
+    padding: 5vh 5vw;
+}
+.msg p {
+    margin: 1vh 0;
+}
+.msg h2 {
+    color: var(--white);
+    word-spacing: 3px;
+    font-size: 2.2rem;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.hello .field, .form textarea {
+    background-color: transparent;
+    color: var(--green);
+    width: 70vw;
+    font-family: var(--font-mono);
+    font-size: 1.2rem;
+    border-radius: 3px;
+    border: 1px solid var(--lightest-slate);
+    margin: 2vh 0;
+    padding: 2vh 1vw;
+}
+footer {
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+footer p{
+    font-size: 0.7rem;
+    text-align: center;
+    pointer-events: none;
+    font-family: var(--font-mono);
+    white-space: nowrap;
+}
 }
 
