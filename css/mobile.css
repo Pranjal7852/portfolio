@@ -16,12 +16,14 @@
         --blue: #57cbff; 
         --font-sans: 'Inter', sans-serif;
         --font-mono: 'Space Mono', monospace;
-        --padding-main: 14vw;
         --fz-xxl: 2.6rem;
         --fz-xl: 2.1rem;
         --fz-l: 2rem;
         --fz-p: 1.3rem;
         --fz-s: 1rem;
+    }
+    body {
+        overflow-x: hidden;
     }
       .menu {
         background-color: transparent;
@@ -64,7 +66,7 @@
         stroke-dashoffset: -134;
         stroke-width: 6;
       }
-
+      
       header {
         height: 8vh;
         width: 100%;
@@ -134,7 +136,7 @@
        left: 2vw;
     }
     .right-ul {
-        right: 2vw;
+        display: none;
     }
     .intro {
         height: 80vh;
@@ -164,9 +166,10 @@
      }
      .about {
         margin: 1vh var(--padding-main);
-        height: 120vh;
+        height: 190vh;
         position: relative;
         width: 85%;
+        padding-left: 0.5vw;
         
     }
     .about .line {
@@ -242,5 +245,67 @@
         left: 17%;
         color: var(--light-slate);
     }
-
+    .expe {
+        margin: 15vh var(--padding-main) 1vh;
+        position: relative;
+        min-height: 100vh;
+        width: 100%;
+    }
+    .expe .head {
+        text-align: center;
+    }
+    .expe .head h4 {
+        text-align: center;
+        font-size: 1.7rem;
+        white-space: nowrap;
+    }
+    .expe .line {
+        width: 90%;
+        left: 70%;
+        top: 110%;
+    }
+    .content {
+        padding: 10vh 0;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+    }
+    .content::after {
+        display: none;
+    }
+    .left {
+        align-self: center;
+    }
+    .right {
+        align-self: center;
+    }
+    .content .card {
+        box-shadow: -3px -3px 1px rgba(255, 255, 255, 0.274), 3px 3px 1px rgba(0, 0, 0, 0.24);
+    }
+    .card h2 {
+        font-size: var(--fz-l);
+        color: var(--light-slate);
+    }
+    .card h4 {
+        font-size: var(--fz-s);
+    }
+    
+    .card {
+        width: 100%;
+        padding: 2vh 10vw;
+        margin: 3vh 0 2vw 0;
+        border-radius: 20px;
+        background-color: var(--dark-navy);
+        position: relative;
+    
+    }
+    .left::after {
+        display: none;
+    
+    }
+    .right::after {
+        display: none;
+    
+    }
 }
