@@ -20,17 +20,28 @@
 </head>
 <body>
     <header>
+        <button class="menu" onclick="menu.classList.toggle('opened');menu.setAttribute('aria-expanded', menu.classList.contains('opened'))" aria-label="Main Menu">
+            <svg width="80" height="100" viewBox="0 0 100 100">
+              <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+              <path class="line line2" d="M 20,50 H 80" />
+              <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+            </svg>
+          </button>
         <div class="logo"> <a href="./index.html"><img src="./images/webxsx.png" alt=""></a> </div>
         <ul data-aos="fade-down" data-aos-delay="50" >
-            <li><a href="#about-p"> <span>01.</span>About</a>
+            <li><a onclick="burgerUl.classList.toggle('menu-show');menu.classList.toggle('opened');menu.setAttribute('aria-expanded', menu.classList.contains('opened'))" href="#about-p"> <span>01.</span>About</a>
             </li>
-            <li><a href="#expe-p"><span>02.</span>Experience</a>
+            <li><a onclick="burgerUl.classList.toggle('menu-show');menu.classList.toggle('opened');menu.setAttribute('aria-expanded', menu.classList.contains('opened'))" href="#expe-p"><span>02.</span>Experience</a>
             </li>
-            <li><a href="#work-p"><span>03.</span>Work</a>
+            <li><a onclick="burgerUl.classList.toggle('menu-show');menu.classList.toggle('opened');menu.setAttribute('aria-expanded', menu.classList.contains('opened'))" href="#work-p"><span>03.</span>Work</a>
             </li>
-            <li><a href="#hello-p"><span>04.</span>Contact</a>
+            <li><a onclick="burgerUl.classList.toggle('menu-show');menu.classList.toggle('opened');menu.setAttribute('aria-expanded', menu.classList.contains('opened'))"; href="#hello-p"><span>04.</span>Contact</a>
             </li>
-            <li><button class="btn magic-hover magic-hover__square" ><a class="" href="./pdfs/cv.pdf" download="Pranjal CV">Resume</a> </button></li>
+            
+            <li><button class="btn" ><a class="" href="./pdfs/cv.pdf" download="Pranjal CV">Resume</a> </button></li>
+            
+            
+           
         </ul>
     </header>
     <!-- LEFT HEADER -->
@@ -65,7 +76,7 @@
         <div data-aos="fade-up" data-aos-delay="1500">
             <p>I'm a Full Stack Developer with a serious passion for UI effects, animations and creating intuitive user experiences with highly scalable backend.</p>
         </div>
-        <button class="btn magic-hover magic-hover__square"><a href="#hello-p">Say Hello</a></button>
+        <button class="btn"><a href="#hello-p">Say Hello</a></button>
             <i class="fab fa-react icon"></i>
             <i class="fab fa-chrome icon"></i>
             <i class="far fa-file-code icon"></i>
@@ -81,7 +92,7 @@
             <div class="line"></div>
         </div>
         <div class="contain">
-            <div class="photo magic-hover magic-hover__square" data-aos="fade-left">
+            <div class="photo" data-aos="fade-left">
                 
             </div>
             
@@ -154,7 +165,7 @@
             <img src="./images/icons/SeekPng.com_mongodb-png_3838960.png" width="40px" alt="">
             <div class="sub">MongoDB</div>
         </div>
-        <div class="prog">
+        <div class="prog" id="java">
             <div class="ldBar ldBar-label" data-value="30" data-preset="circle">
             </div>
             <img src="./images/icons/coffee-logo-png-7513.png" width="40px" alt="">
@@ -250,7 +261,7 @@
 
             <!-- first card stars here -->
             <div class="card-ss right-ss">
-                <div class="img-ss pixo " data-aos="fade-left">
+                <div class="img-ss pixo ">
                 </div>
                 <div class="card-main right-ss " data-aos="zoom-in-left">
                     <div><span class="green-line">Club Project</span></div>
@@ -441,7 +452,7 @@
                     <input type="text" placeholder="Your Good Name" class="field">
                     <input type="text" placeholder="Your Email Please" class="field">
                     <textarea placeholder="Your Message " id="" cols="30" rows="10"></textarea>
-                    <button type="submit" class="btn magic-hover magic-hover__square">Hello Pranjal</button>
+                    <button type="submit" class="btn">Hello Pranjal</button>
                 </form>
             
         </div>
@@ -455,6 +466,14 @@
     <script src="./library/aos.js"></script>
    
     <script>
+        //burger button 
+        let burgerUl = document.querySelector("header ul");
+        var burgerbtn = document.querySelector(".menu");
+        burgerbtn.addEventListener("click", function() {
+            burgerUl.classList.toggle("menu-show");
+            console.log("working");
+        });
+        var menu = document.querySelector(".menu");
         // Navbar Scroll
         (function(){
 
@@ -541,17 +560,6 @@ window.addEventListener('scroll', checkScroll);
             duration:500
         });
 
-    </script>
-    <script>
-        options = {
-	"cursorOuter": "circle-basic",
-	"hoverEffect": "circle-move",
-	"hoverItemMove": false,
-	"defaultCursor": false,
-	"outerWidth": 30,
-	"outerHeight": 30
-      };
-    magicMouse(options);
     </script>
 </body>
 </html>
