@@ -1,5 +1,5 @@
 # Welcome to My Portfolio Website
-Website is Hosted on Heroku. Link of the Website is [here](http://pranjal-portfolio.herokuapp.com/)
+Website is Hosted on Heroku. Link of the Website is [here](https://pranjal-portfolio.herokuapp.com/)
 
 I'm a Full Stack Developer with a serious passion for UI effects, animations and creating intuitive user experiences with highly scalable backend.
 
