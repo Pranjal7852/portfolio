@@ -1,8 +1,19 @@
 # Welcome to My Portfolio Website
-Link for the website is [here](http://pranjal-portfolio.herokuapp.com/)
+Website is Hosted on Heroku. Link of the Website is [here](http://pranjal-portfolio.herokuapp.com/)
 
 I'm a Full Stack Developer with a serious passion for UI effects, animations and creating intuitive user experiences with highly scalable backend.
 
+# Prerequisites
+Make sure your Shell has these Modules install with listed below versions to run the website locally.
+    
+    node --version
+    v14.X.X        //or above
+    
+    npm --version
+    v6.X.X        //or above
+    
+    git --version
+    v2.XX        //or above
 
 # Library Used
 
