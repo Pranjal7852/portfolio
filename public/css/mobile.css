@@ -67,7 +67,7 @@
       }
       
       header {
-        height: 8vh;
+        height: 5vh;
         position: fixed;
         top: 0px;
         display: flex;
@@ -77,13 +77,13 @@
         background-color: #0a192f73;
         z-index: 100;
         transition: 500ms;
-        padding: 6vh 6vw;
+        padding: 4vh 7vw;
         width: 99vw;
         flex-direction: row-reverse;
 
     }
     header img {
-        width: 45px;
+        width: 35px;
         opacity: 0.9;
     }
       header ul{
@@ -92,7 +92,7 @@
         position: absolute;
         top: 10vh;
         width: 90%;
-        height: 92vh;
+        height: 96vh;
         justify-content: space-evenly;
         align-items: center;
         background-color: #0a192ffb;
@@ -152,7 +152,7 @@
         margin: 15vh var(--padding-main) 1vh;
         line-height: 2;
         position: relative;
-        padding: 0 2vw;
+        padding: 5vh 2vw;
      }
      .intro h1 {
          font-size: 2.8rem;
@@ -248,23 +248,23 @@
         opacity: 0.5;
     }
     .fa-react{
-        bottom: 29%;
-        right: 12%;
+        bottom: 40%;
+    right: -3%;
         color: var(--light-slate);
     }
     .fa-chrome {
-        top: 39%;
+        top: 21%;
     right: -1%;
         color: var(--light-slate);
     }
     .fa-file-code {
-        top: 43%;
-    right: 27%;
+        top: 0%;
+    right: -15%;
         color: var(--light-slate);
     }
     .fa-css3 {
-        top: 16%;
-    right: 13%;
+        top: -5%;
+        right: 13%;
         color: var(--light-slate);
     }
     .fa-edge {
@@ -280,6 +280,153 @@
     .fa-wifi {
         bottom: 4%;
         left: 17%;
+        color: var(--light-slate);
+    }
+    .fa-at {
+        bottom: -16%;
+    left: -3%;
+        color: var(--light-slate);
+    }
+    .fa-hdd {
+        bottom: -8%;
+        left: 0%;
+        color: var(--light-slate);
+    }
+    
+    .fa-app-store {
+        top: 12%;
+    right: 6%;
+        color: var(--light-slate);
+    }
+    .fa-calendar{
+        top: 52%;
+    left: 88%;
+        color: var(--light-slate);
+    
+    }
+    .fa-microphone {
+        top: 33%;
+        left: 2%;
+        color: var(--light-slate);
+    }
+    .fa-camera {
+        top: 39%;
+        left: 38%;
+        color: var(--light-slate);
+    }
+    .fa-infinity {
+        top: 67%;
+        left: 76%;
+        color: var(--light-slate);
+    }
+    .fa-tv {
+        bottom: 25%;
+        left: 5%;
+        color: var(--light-slate);
+    }
+    .fa-playstation {
+        bottom: 1%;
+        left: 7%;
+        color: var(--light-slate);
+    }
+    .fa-google-play {
+        top: -12%;
+    right: 5%;
+        color: var(--light-slate);
+    }
+    .fa-google {
+        bottom: 0%;
+        right: 3%;
+        color: var(--light-slate);
+    }
+    .fa-bluetooth {
+        top: 11%;
+    right: -10%;
+        color: var(--light-slate);
+    }
+    .fa-language {
+        top: 26%;
+    right: 85%;
+        color: var(--light-slate);
+    }
+    .fa-youtube {
+        top: 34%;
+    right: -4%;
+        color: var(--light-slate);
+    }
+    .fa-napster {
+        top: 50%;
+        right: 59%;
+        color: var(--light-slate);
+    }
+    .fa-trophy {
+        top: 56%;
+    left: 97%;
+        color: var(--light-slate);
+    }
+    .fa-paypal {
+        top: 66%;
+    right: 88%;
+        color: var(--light-slate);
+    }
+    .fa-paper-plane {
+        top: 80%;
+        right: 64%;
+        color: var(--light-slate);
+    }
+    .fa-spotify {
+        top: 71%;
+        right: -6%;
+        color: var(--light-slate);
+    }
+    .fa-bell {
+        bottom: -4%;
+        right: 2%;
+        color: var(--light-slate);
+    }
+    .fa-broadcast-tower {
+        bottom: 3%;
+    left: 57%;
+        color: var(--light-slate);
+    }
+    .fa-inbox {
+        top: 31%;
+        right: 88%;
+        color: var(--light-slate);
+    }
+    .fa-envelope-open-text {
+        top: 69%;
+        right: -15%;
+        color: var(--light-slate);
+    }
+    .fa-voicemail {
+        top: 32%;
+        right: 19%;
+        color: var(--light-slate);
+    }
+    .fa-address-book {
+        top: 102%;
+        right: 85%;
+        color: var(--light-slate);
+    }
+    .fa-address-card {
+        top: 106%;
+    right: -2%;
+        color: var(--light-slate);
+    }
+    .fa-fax {
+        top: 22%;
+    right: -8%;
+        color: var(--light-slate);
+    }
+    .fa-lightbulb {
+        top: 56%;
+    left: -2%;
+        color: var(--light-slate);
+    }
+    .fa-comment {
+        top: -1%;
+        left: 3%;
         color: var(--light-slate);
     }
     /* Experience section */
@@ -479,7 +626,7 @@ footer {
     
 }
 footer p{
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     text-align: center;
     pointer-events: none;
     font-family: var(--font-mono);
